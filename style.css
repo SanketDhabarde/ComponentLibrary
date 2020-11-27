@@ -9,6 +9,7 @@
 body
 {
     font-family: 'Roboto', sans-serif;
+    margin: 0px;
 }
 
 hr{
@@ -85,6 +86,7 @@ hr{
 }
 .hero .hero-heading{
     color: var(--gray-color);
+    text-align: center;
 }
 .hero .hero-heading .highlighted{
     color: var(--primary-color);
@@ -99,4 +101,19 @@ hr{
 }
 .ow{
     background-color: var(--light-gray);
+}
+
+/* footer */
+.footer{
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 2rem;
+    border-top-right-radius: 1rem;
+    color: white;
+}
+.footer .link{
+    color: white;
+}
+.footer ul{
+    padding-inline-start:0px;
 }
