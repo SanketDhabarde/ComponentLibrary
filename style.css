@@ -2,6 +2,8 @@
 
 :root{
     --primary-color: #059669;
+    --gray-color: #6B7280;
+    --light-gray: #E5E7EB;
 }
 
 body
@@ -70,4 +72,31 @@ hr{
 }
 .navigation .link{
     color: white;
+}
+
+/* header */
+.hero{
+    padding: 2rem;
+}
+.hero .hero-img{
+    max-width: 350px;
+    display: block;
+    margin: 0 auto;
+}
+.hero .hero-heading{
+    color: var(--gray-color);
+}
+.hero .hero-heading .highlighted{
+    color: var(--primary-color);
+}
+
+/* section */
+.section{
+    padding: 2rem;
+}
+.section h3{
+    text-align: center;
+}
+.ow{
+    background-color: var(--light-gray);
 }
