@@ -16,8 +16,7 @@ hr{
 /**container**/
 .container 
 {
-    padding-left: 1rem;
-    padding-right: 1rem;
+   padding: 1rem 1rem;
 }
 .container-center{
     max-width: 600px;
@@ -54,3 +53,21 @@ hr{
     padding: 0rem 0.5rem;
 }
 
+/* navigation */
+.navigation{
+    background-color: var(--primary-color);
+    color: white;
+    border-bottom-left-radius: 1rem;
+}
+.navigation .nav-brand{
+    font-weight: bold;
+}
+.navigation .nav-pills{
+    text-align: right;
+}
+.navigation .link-active{
+    font-weight: bold;
+}
+.navigation .link{
+    color: white;
+}
