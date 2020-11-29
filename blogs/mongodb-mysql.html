@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mongodb | mysql</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h2 class="container container-center">@sanketdhabarde.com</h2>
+    <header class="hero container container-center">
+        <h1 class="heading-blog">useful mongo commands </h1>
+        <strong ><small>november 29, 2020</small></strong>
+        <img class="hero-img-other" src="https://images.unsplash.com/photo-1489875347897-49f64b51c1f8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8cXVlcnl8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+    </header>
+    <div class="container container-center">
+        <h3>basic intro to mngodb</h3>
+        <p>it is noSql database which makes it much flexible and most famous database among developers as compared to sql databases. here are some useful commands which we use in MongoDb.</p>
+        <ol>
+            <li>mongod</li>
+            <li>mongo</li>
+            <li>help</li>
+            <li>show dbs</li>
+            <li>use</li>
+            <li>insert</li>
+            <li>find</li>
+            <li>update</li>
+            <li>remove</li>
+        </ol>
+    </div>
+    <div class="container container-center">
+        <h3>we can see these commands one by one</h3>
+        <p><strong>1. mongod</strong></p>
+        <p>it is primary deamon process for the MongoDb. to use the mongodb it is very usefull to start the mongod shell. you just need to type <strong>mongod</strong> in cmd and it will start the deamon process.</p>
+
+        <br>
+        <p><strong>2. mongo</strong></p>
+        <p>it is use to open the mongo shell. you just need to type <strong>mongo</strong> in your normal cmd and it will open up the mongodb shell. but for that you need to first set up the path variable.</p>
+
+        <br>
+        <p><strong>3. help</strong></p>
+        <p>as the name suggest it will help us to remember in case we forgot somethingin mongodb.we don't use this often but it is helpful to know. youjust needto type <strong>help</strong> in mongo shell.</p>
+
+        <br>
+        <p><strong>4. show dbs</strong></p>
+        <p>it is used to show the databases present in our system. you just need to type <strong>show dbs</strong> in the mongo shell.</p>
+
+        <br>
+        <p><strong>5. use</strong></p>
+        <p>is is use to use the selected database from the databases. also if the database is not present it will create the database and use it. you need to type <strong>use databse_name</strong> in the mongo shell.</p>
+
+        <br>
+        <p><strong>6. insert</strong></p>
+        <p>to insert the data in the database we use collections in the mongodb, unlike sql databases in which we use tables. for example, suppose we want to create the collection of dog in our database so to writhe the syntax you just need to type <br><br> <strong>db.dogs.insert({name: "Rusty", breed: "Mutt"})</strong> <br><br> to insert the data we use the object format i.e {property:value,..}</p>
+
+        <br>
+        <p><strong>7. find</strong></p>
+        <p>if we want to find all the items in our collection you just need to type <strong>db.dogs.find()</strong> <br> but if you want to find the specific item you need to pass the object like <strong>db.dogs.find({name:"Rusty"})</strong></p>
+
+        <br>
+        <p><strong>8. update</strong></p>
+        <p>if you want to update some specific entries the update command take the two argument object first one is to select the entry which you want to update the second one is the values you wanna set to it. ex. <br><br> <strong>db.dogs.update({name:"Rusty"},{$set: breed:"labrodoodle", isCute:true})</strong> <br><br> it will change the breed and also add the new property.</p>
+
+        <br>
+        <p><strong>9. remove</strong></p>
+        <p>to remove the entry you just need to select the entry and delete it. ex. <br> <strong>db.dogs.remove({breed:"mutt"})</strong><br> it will remove all the entries which having the breed mutt</p>
+    </div>
+</body>
+</html>
